@@ -70,7 +70,6 @@ import org.openflexo.view.FlexoMainPane;
 import org.openflexo.view.ModuleView;
 import org.openflexo.view.controller.ControllerActionInitializer;
 import org.openflexo.view.controller.FlexoController;
-import org.openflexo.view.controller.GenericPerspective;
 import org.openflexo.view.controller.model.FlexoPerspective;
 import org.openflexo.view.menu.FlexoMenuBar;
 
@@ -83,7 +82,7 @@ public class OMController extends FlexoController {
 
 	private static final Logger logger = Logger.getLogger(OMController.class.getPackage().getName());
 
-	private GenericPerspective genericPerspective;
+	private OMPerspective omPerspective;
 	private FMLTechnologyPerspective fmlPerspective;
 	private FMLControlledDiagramNaturePerspective diagramPerspective;
 	private FMLControlledFIBNaturePerspective ginaPerspective;
@@ -100,7 +99,7 @@ public class OMController extends FlexoController {
 	protected void initializePerspectives() {
 
 		addToPerspectives(fmlPerspective = new FMLTechnologyPerspective(this));
-		addToPerspectives(genericPerspective = new GenericPerspective(this));
+		addToPerspectives(omPerspective = new OMPerspective(this));
 		addToPerspectives(diagramPerspective = new FMLControlledDiagramNaturePerspective(this));
 		addToPerspectives(ginaPerspective = new FMLControlledFIBNaturePerspective(this));
 		addToPerspectives(localesPerspective = new LocalizationPerspective(this));
@@ -123,8 +122,8 @@ public class OMController extends FlexoController {
 		}
 	}
 
-	public GenericPerspective getGenericPerspective() {
-		return genericPerspective;
+	public OMPerspective getOMPerspective() {
+		return omPerspective;
 	}
 
 	public FMLTechnologyPerspective getFMLPerspective() {
@@ -182,19 +181,6 @@ public class OMController extends FlexoController {
 		return getApplicationContext().getService(VirtualModelLibrary.class);
 	}
 
-	
-	
-	/**
-	 * Return boolean indicating if there is a {@link ModuleView} which can represent supplied object in supplied perspective
-	 * @param object
-	 * @param perspective
-	 * @return
-	 */
-	/*public boolean mayRepresent(FlexoObject object, FlexoPerspective perspective) {
-		fdssdf
-	}*/
-	
-	
 	/**
 	 * Select the view representing supplied object, if this view exists. Try all to really display supplied object, even if required view
 	 * is not the current displayed view
