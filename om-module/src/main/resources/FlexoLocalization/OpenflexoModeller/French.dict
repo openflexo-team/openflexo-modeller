@@ -14,5 +14,6 @@ opening_module_view_for_object=Ouverture de la vue module pour l'objet
 property=Propri\u00E9t\u00E9
 refactor=Transformer
 select_default_object=S\u00E9lection de l'objet par d\u00E9faut
+tabular_perspective=tabular_perspective
 textual_FML_perspective=Perspective textuelle FML
 title=Titre

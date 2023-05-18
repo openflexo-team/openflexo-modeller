@@ -14,5 +14,6 @@ opening_module_view_for_object=opening_module_view_for_object
 property=property
 refactor=refactor
 select_default_object=select_default_object
+tabular_perspective=tabular_perspective
 textual_FML_perspective=textual_FML_perspective
 title=title
