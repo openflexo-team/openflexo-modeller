@@ -9,6 +9,7 @@ dependencies {
   implementation ginaConnector()
   implementation ginaConnectorUi()
   implementation group: 'org.openflexo', name: 'fml-diagramming-extension', version: '2.99-SNAPSHOT'
+  implementation group: 'org.openflexo', name: 'fml-gina-extension', version: '2.99-SNAPSHOT'
   // external dep
 
   // testing dep
