@@ -42,7 +42,6 @@ package org.openflexo.om.controller;
 import java.util.logging.Logger;
 
 import org.openflexo.fml.controller.FMLTechnologyPerspective;
-import org.openflexo.fml.controller.LocalizationPerspective;
 import org.openflexo.foundation.FlexoObject;
 import org.openflexo.foundation.FlexoProject;
 import org.openflexo.foundation.fml.FMLObject;
@@ -86,7 +85,6 @@ public class OMController extends FlexoController {
 	private FMLTechnologyPerspective fmlPerspective;
 	private FMLControlledDiagramNaturePerspective diagramPerspective;
 	private FMLControlledFIBNaturePerspective ginaPerspective;
-	private LocalizationPerspective localesPerspective;
 
 	/**
 	 * Default constructor
@@ -102,7 +100,6 @@ public class OMController extends FlexoController {
 		addToPerspectives(omPerspective = new OMPerspective(this));
 		addToPerspectives(diagramPerspective = new FMLControlledDiagramNaturePerspective(this));
 		addToPerspectives(ginaPerspective = new FMLControlledFIBNaturePerspective(this));
-		addToPerspectives(localesPerspective = new LocalizationPerspective(this));
 	}
 
 	@Override
@@ -136,10 +133,6 @@ public class OMController extends FlexoController {
 
 	public FMLControlledFIBNaturePerspective getGinaPerspective() {
 		return ginaPerspective;
-	}
-
-	public LocalizationPerspective getLocalesPerspective() {
-		return localesPerspective;
 	}
 
 	@Override
