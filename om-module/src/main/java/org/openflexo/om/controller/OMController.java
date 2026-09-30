@@ -42,6 +42,7 @@ package org.openflexo.om.controller;
 import java.util.logging.Logger;
 
 import org.openflexo.fml.controller.FMLTechnologyPerspective;
+import org.openflexo.fml.gina.controller.FMLGUIPerspective;
 import org.openflexo.foundation.FlexoObject;
 import org.openflexo.foundation.FlexoProject;
 import org.openflexo.foundation.fml.FMLObject;
@@ -63,8 +64,6 @@ import org.openflexo.selection.MouseSelectionManager;
 import org.openflexo.technologyadapter.diagram.DiagramTechnologyAdapter;
 import org.openflexo.technologyadapter.diagram.controller.FMLControlledDiagramNaturePerspective;
 import org.openflexo.technologyadapter.diagram.fml.FMLControlledDiagramVirtualModelInstanceNature;
-import org.openflexo.technologyadapter.gina.GINATechnologyAdapter;
-import org.openflexo.technologyadapter.gina.controller.FMLControlledFIBNaturePerspective;
 import org.openflexo.view.FlexoMainPane;
 import org.openflexo.view.ModuleView;
 import org.openflexo.view.controller.ControllerActionInitializer;
@@ -84,7 +83,7 @@ public class OMController extends FlexoController {
 	private OMPerspective omPerspective;
 	private FMLTechnologyPerspective fmlPerspective;
 	private FMLControlledDiagramNaturePerspective diagramPerspective;
-	private FMLControlledFIBNaturePerspective ginaPerspective;
+	private FMLGUIPerspective guiPerspective;
 
 	/**
 	 * Default constructor
@@ -99,7 +98,7 @@ public class OMController extends FlexoController {
 		addToPerspectives(fmlPerspective = new FMLTechnologyPerspective(this));
 		addToPerspectives(omPerspective = new OMPerspective(this));
 		addToPerspectives(diagramPerspective = new FMLControlledDiagramNaturePerspective(this));
-		addToPerspectives(ginaPerspective = new FMLControlledFIBNaturePerspective(this));
+		addToPerspectives(guiPerspective = new FMLGUIPerspective(this));
 	}
 
 	@Override
@@ -113,9 +112,6 @@ public class OMController extends FlexoController {
 	public void focusOnTechnologyAdapter(TechnologyAdapter<?> technologyAdapter) {
 		if (technologyAdapter instanceof DiagramTechnologyAdapter) {
 			switchToPerspective(getDiagramPerspective());
-		}
-		else if (technologyAdapter instanceof GINATechnologyAdapter) {
-			switchToPerspective(getGinaPerspective());
 		}
 	}
 
@@ -131,8 +127,8 @@ public class OMController extends FlexoController {
 		return diagramPerspective;
 	}
 
-	public FMLControlledFIBNaturePerspective getGinaPerspective() {
-		return ginaPerspective;
+	public FMLGUIPerspective getGUIPerspective() {
+		return guiPerspective;
 	}
 
 	@Override
