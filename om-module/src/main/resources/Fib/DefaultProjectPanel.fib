@@ -108,20 +108,20 @@
 		<Localized id="22" lang="English"
 			value="Would you like to design a virtual models ?"
 			key="design_virtual_model" />
-		<Localized id="23" lang="Dutch" value="design_virtual_model"
+		<Localized id="23" lang="Dutch" value="Wilt u een VirtualModel ontwerpen?"
 			key="design_virtual_model" />
 		<Localized id="24" lang="French"
 			value="Voulez vous travailler sur un VirtualModel ?"
 			key="design_virtual_model" />
 		<Localized id="25" lang="English" value="Open virtual model"
 			key="open_virtual_model" />
-		<Localized id="26" lang="Dutch" value="open_virtual_model"
+		<Localized id="26" lang="Dutch" value="VirtualModel openen"
 			key="open_virtual_model" />
 		<Localized id="27" lang="French"
 			value="Ouvrir le VirtualModel" key="open_virtual_model" />
 		<Localized id="28" lang="English" value="New virtual model"
 			key="new_virtual_model" />
-		<Localized id="29" lang="Dutch" value="new_virtual_model"
+		<Localized id="29" lang="Dutch" value="Nieuw VirtualModel"
 			key="new_virtual_model" />
 		<Localized id="30" lang="French"
 			value="Nouveau VirtualModel" key="new_virtual_model" />
@@ -137,20 +137,20 @@
 		<Localized id="34" lang="English"
 			value="Execute virtual model" key="execute_virtual_model" />
 		<Localized id="35" lang="Dutch"
-			value="execute_virtual_model" key="execute_virtual_model" />
+			value="VirtualModel uitvoeren" key="execute_virtual_model" />
 		<Localized id="36" lang="French"
 			value="Voulez vous exécuter un VirtualModel ?"
 			key="execute_virtual_model" />
 		<Localized id="37" lang="English" value="Open instance"
 			key="open_instance" />
-		<Localized id="38" lang="Dutch" value="open_instance"
+		<Localized id="38" lang="Dutch" value="Instantie openen"
 			key="open_instance" />
 		<Localized id="39" lang="French" value="Ouvrir une instance"
 			key="open_instance" />
 		<Localized id="40" lang="English"
 			value="Instantiate virtual model" key="instantiate_virtual_model" />
 		<Localized id="41" lang="Dutch"
-			value="instantiate_virtual_model" key="instantiate_virtual_model" />
+			value="VirtualModel instantiëren" key="instantiate_virtual_model" />
 		<Localized id="42" lang="French"
 			value="Instancier un VirtualModel" key="instantiate_virtual_model" />
 		<Localized id="43" lang="English" value="Label" key="label" />
