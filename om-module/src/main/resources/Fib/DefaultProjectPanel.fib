@@ -155,7 +155,7 @@
 			value="Instancier un VirtualModel" key="instantiate_virtual_model" />
 		<Localized id="43" lang="English" value="Label" key="label" />
 		<Localized id="44" lang="Dutch" value="Label" key="label" />
-		<Localized id="45" lang="French" value="label" key="label" />
+		<Localized id="45" lang="French" value="Libellé" key="label" />
 	</LocalizedDictionary>
 	<FIBVariable id="46"
 		type="org.openflexo.foundation.FlexoProject" name="data" />
